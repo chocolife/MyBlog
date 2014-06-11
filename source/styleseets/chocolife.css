@@ -1,0 +1,835 @@
+/* default
+------------------------------------------------------------ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	background-image: url(http://blog-imgs-69.fc2.com/c/h/o/chocolife/flarebg7.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	color: #BBB;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+}
+
+div#container {
+	min-width: 850px;
+	max-width: 1150px;
+}
+
+html>body {
+	font-size: small;
+	line-height: 170%;
+}
+
+/* for IE \*/
+* html body {
+	font-size: 78%;
+}	
+/**/
+
+
+	
+
+/* Hyper text
+------------------------------------------------- */
+
+a { 
+	text-decoration: none;
+	/*\*/
+	overflow: hidden;
+	/**/
+}
+
+a:link,
+a:visited {color: #CCC; }
+a:focus,
+a:hover,
+a:active { color: #F07; }
+
+
+
+/* Image
+------------------------------------------------- */
+
+/*
+img,
+a img {
+	border: none;
+}
+*/
+
+.emoji{
+	vertical-align: middle;
+}
+
+
+
+/* Base elements
+------------------------------------------------- */
+
+h1 { font-size: 160%; }
+	
+h2 { font-size: 130%; }
+	
+h3 { font-size: 116%; }
+	
+h4 { font-size: 100%; }
+	
+h5 { font-size: 94%; }
+	
+h6 { font-size: 85%; }
+
+/*
+h1, h2, h3, h4, h5, h6 {
+font-family: Impact, "Ariel Black", "Aharoni", "メイリオ", "Meiryo", "Meiryo UI", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "Osaka-等幅",sans-serif;
+}
+*/
+	
+ul, ol, li, dl, dt, dd { list-style: none; }
+	
+blockquote {
+	width: auto;
+	margin: 10px 20px;
+	padding: 0.2em 1em;
+	border: 1px dashed;
+}
+	
+textarea,input,select {
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+}
+
+html>body textarea,
+html>body input,
+html>body select { font-size: small; }
+
+
+pre {
+	background-color: #fff;
+	margin: 1em auto;
+	padding: 0.5em;
+	border-color: #3b396f !important;
+	border: 1px solid;
+	font-family: sans-serif;
+	overflow: auto;
+	/*width: 90%;*/
+}
+
+/* for without MacIE5 \*/
+
+div.main_body pre {	overflow: scroll; }
+/**/
+	
+div.main_body > pre { width: auto; }
+	
+div.main_body code { font-family: monospace; }
+
+
+
+/* Layout
+------------------------------------------------------------ */
+
+div#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#header {
+	width: 100%;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	margin-bottom: 60px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+div#primary {
+	width: 100%;
+	float: left;
+	margin-right: -285px;
+}
+
+div#main {
+	margin-right: 320px;
+	margin-left: 35px;
+}
+
+div#sidemenu {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid #3b396f;
+	font-size: 90%;
+	color: #dde;
+	float: left;
+	width: 250px;
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+
+div#footer {
+	clear: both;
+	padding-bottom:15px;
+	padding-top: 15px;
+	margin-top: 60px;
+	width: 100%;
+	font-size: 85%;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	background: rgba(0, 0, 0, 0.5);
+}
+	
+html>div#footer {
+	font-size: small;
+}
+
+
+
+/* Header
+------------------------------------------------------------ */
+
+div#header h1 {
+	text-align: center;
+	padding-bottom: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+	
+div#header p {
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+
+/* Main Contents
+------------------------------------------------------------ */
+	
+div.content {
+	margin-bottom: 80px;
+	text-align: left;
+	/*overflow: hidden;*/
+	width: 100%;
+	background: rgba(40, 40, 60, 0.5);
+	border: 1px solid #3b396f;
+}
+
+h2.entry_header,
+h3.entry_header {
+	background: rgba(0, 0, 0, 0.5);
+	background-image: url(http://blog-imgs-69.fc2.com/c/h/o/chocolife/titlebg5.png);
+	text-align: left;
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 30px;
+	padding-top: 15px;
+	border-bottom: 1px solid #b2b;
+	/*border-left: 10px solid #b2b;*/
+	color: #CCC;
+}
+
+div.entry_body {
+	color: #dde;
+	/*background-color: #1a1932;*/
+	text-align: left;
+	padding-bottom: 20px;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 20px;
+}
+
+div.entry_body p.entry_more {
+	padding: 30px 15px 15px 0px;
+	margin: 0px;
+}
+	
+div.entry_body p.tag_lnk {
+	margin: 0px;
+}
+	
+div.entry_body p.theme {
+	margin: 10px 0px 0px;
+}
+
+
+div.entry_body a:link,
+div.entry_body a:visited {
+	color: #88F;
+	text-decoration: underline;
+}
+
+div.entry_body a:focus,
+div.entry_body a:hover,
+div.entry_body a:active { 
+	color: #F07;
+}
+
+div.entry_body img {
+	border-color: #3b396f !important;
+	border: 1px solid;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.entry_body a:link img,
+div.entry_body a:visited img {
+	border: solid 1px #3b396f !important;
+}
+
+div.entry_body a:focus img,
+div.entry_body a:hover img,
+div.entry_body a:active img {
+	border: solid 1px #F07 !important;
+}
+
+div.tags {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 5px 0 5px 0;
+}
+
+
+ul.entry_footer {
+	font-size: 90%;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: right;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	border-top: 1px solid #b2b;
+}
+
+ul.entry_footer li {
+	display: inline;
+	list-style-type: none;
+}
+
+/* clap + bookmark */
+div.fc2_footer {
+	margin: 15px 0px 0px;
+}
+
+div.page_navi {
+	/*background-image: url(http://blog-imgs-69.fc2.com/c/h/o/chocolife/menubg5.png);*/
+	margin-top: -70px;
+	margin-bottom: 50px;
+	font-style: bold
+	text-align: left;
+	padding: 8px 0 8px 0;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	/*border: 1px solid #3b396f;*/
+}
+
+div.navi_left {
+	float: left;
+	font-size: 1.2em;
+}
+
+
+
+div.navi_right {
+	float: right;
+	font-size: 1.2em;
+}
+
+/*div.pagetop {
+	text-align: right;
+	padding-top: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 5px;
+	background: rgba(0,0,0,0.7);
+	background-image: url(http://blog-imgs-49.fc2.com/c/h/o/chocolife/titlebg3.png);
+}*/
+
+.clear {
+	margin-right: 0;
+}
+
+.clear: after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.pagetop {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 55px;
+}
+.pagetop a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: rgba(40, 40, 60, 0.5);
+	border: 1px solid #3b396f;
+	text-align: center;
+	color: #dde;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+
+pre.mycode-nopre {
+	font-family: Courier, mono, serif;
+	border-color: #3b396f;
+	background: rgba(40, 40, 60, 0.5);
+	color: #BBB;
+	/*padding: 0.3em 1em 0.3em 1em;*/
+	/*margin: 0.3em 0 0.3em 0;*/
+	overflow: auto;
+}
+
+
+
+/* Entry (html tag)
+------------------------------------------------------------ */
+
+div.entry_body h2,
+div.entry_body h3,
+div.entry_body h4,
+div.entry_body h5,
+div.entry_body h6 {
+	margin: 0em 0em 0.5em;
+}
+
+div.entry_body p {
+	margin: 0.3em 1em;
+}
+
+/*
+div.entry_body ul,
+div.entry_body ol {
+	margin: 1em 0em 1em;
+}
+*/
+
+div.entry_body ul li {
+	list-style: disc outside;
+	margin-left: 15px;
+}
+
+div.entry_body ol li {
+	list-style: decimal outside;
+	margin-left: 2em;
+}
+
+div.entry_body dl {
+	margin: 1em 1.5em;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding: 1em 1em 0em;
+}
+
+div.entry_body dt {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+}
+
+div.entry_body dd {
+	margin: 0em 1em 1em;
+}
+
+
+
+
+/* Comment, Trackback, Entry list
+------------------------------------------------------------ */
+
+p.sub_header {
+	text-align: left;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 30px;
+	padding-top: 5px;
+	border-bottom: 1px solid #b2b;
+	/*border-left: 30px solid #466890;*/
+	/*color: #A8B7CE;*/
+	/*background: #00254E;*/
+	font-size: 130%;
+}
+
+h3.sub_title {
+	padding-left: 15px;
+	margin-bottom: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 15px;
+	border-bottom: 1px solid #b2b;
+	/*color: #A8B7CE;*/
+	
+}
+
+div.sub_body {
+	margin: 0px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 0px;
+	/*background: #00254E;*/
+}
+
+ul.list_body {
+	margin:0px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top :30px;
+	/*background: #00254E;*/
+}
+
+ul.list_body li {
+	margin-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	padding-bottom: 1px;
+}
+
+ul.sub_footer {
+	text-align: right;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0px;
+	/*background: #00254E;*/
+}
+
+ul.sub_footer li {
+	display: inline;
+	list-style-type: none;
+}
+
+div.form {
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	/*background: #00254E;*/
+}
+div.form dl {
+	margin: 5px;
+}
+
+div.form dl dd {
+	padding-bottom: 5px;
+}
+
+div.form dl dd textarea {
+	width: 90%;
+	height: 180px;
+}
+
+div.form input#himitu {
+	margin-right: 0.5em;
+}
+
+div.form .form_btn {
+	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+}
+
+div.form .form_btn input {
+	margin-right: 3px;
+}
+
+p.trackback_url {
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	text-align: left;
+	/*background: #00254E;*/
+}
+
+p.trackback_url input {
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border:none;
+	width: 80%;
+	/*background-color: #8CABDD;*/
+	/*color: #00254E;*/
+}
+
+
+/* third plugin
+------------------------------------------------------------ */
+
+h3.plg3_header {
+	text-align: left;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 30px;
+	padding-top: 5px;
+	border-bottom: 1px dashed #8CABDD;
+	border-left: 30px solid #8CABDD;
+	color: #A8B7CE;
+}
+
+div.plg3_body {
+	text-align: left;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+}
+
+div.plg3_body p.entry_more {
+	padding: 15px 30px 30px 15px;
+	margin: 0px;
+}
+	
+div.plg3_body p.tag_lnk {
+	margin: 0px;
+}
+	
+div.plg3_body p.theme {
+	margin: 10px 0px 0px;
+}
+
+
+/* Plugin (Main content)
+------------------------------------------------------------ */
+
+div.entry_body .plg_header,
+div.entry_body .plg_body, 
+div.entry_body .plg_footer {
+	margin-top: 0px;
+}
+
+
+
+/* Sidemenu (Plugin)
+------------------------------------------------------------ */
+
+#sidemenu1 li,
+#sidemenu2 li {
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 15px;
+}
+
+dl.sidemenu_body .plg_title {
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 6px;
+	border-bottom: 1px solid #37f;
+	background: rgba(0, 0, 0, 0.5);
+	background-image: url(http://blog-imgs-69.fc2.com/c/h/o/chocolife/menubg6.png);
+	font-weight: bold;
+	color: #8CF;
+}
+
+dl.sidemenu_body {
+	margin-bottom: 35px;
+	margin-right: 0px;
+}
+
+	
+dl.sidemenu_body .plg_header,
+dl.sidemenu_body .plg_body,
+dl.sidemenu_body .plg_footer {
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	
+}
+
+
+dl.sidemenu_body .plg_body input {
+	margin: 2px;
+}
+
+.searchsubmit {
+	width: 50px;
+	font-size: 80%;
+	border: 1px solid #3b396f;
+	color: #000;
+	background-color: #FFF;
+	margin-top: 5px;
+}
+
+
+
+/* calender(Plugin)
+------------------------------------------------------------ */
+
+table.calender {
+	width: 90%;
+	margin: 0px auto;
+}
+
+table.calender caption {
+	margin-bottom: 15px;
+	margin: 0px auto;
+}
+
+table.calender th,
+table.calender td {
+	padding: 0.1em;
+	border-bottom: 1px dotted #00254E;
+	text-align: center;
+}
+
+table.calender td a {
+	display: block;
+	color: #A8B7CE;
+	background-color: #00254E;
+}
+
+table.calender td a:hover{ 
+	display: block;
+	background-color: #8CABDD;
+	color: #FFFFFF;
+}
+
+table.calender th#sun {
+	color: #FF6600;
+}
+
+table.calender th#sat {
+	color: #0066FF;
+}
+
+
+
+/* Piyo(Plugin)
+------------------------------------------------------------ */
+
+div.tab {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+div.tab input{
+	padding: 5px 5px;
+}
+
+div.tab input.b1{
+	margin-right: 5px;
+}
+    
+div.mylog {
+	width: 190px;
+	padding: 15px;
+	border: 1px solid #00254E;
+	font-size: small;
+	text-align: left;
+	color: #CCCCCC;
+	background-color: #00254E;
+	margin: 0px;
+}
+
+div.mylog p.title {
+	font-weight: bold;
+	color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #8CABDD;
+	margin: 0px 0px 15px;
+	padding: 0px 0px 5px;
+}
+
+div.mylog dl {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.mylog dt.day {
+	width: 190px;
+	color: #CCCCCC;
+	font-size: x-small;
+	margin: 0px;
+	padding: 0px 0px 5px;
+	background-color: #00254E;
+	background-image: none;
+	text-align: left;
+}
+div.mylog dd.piyolog {
+	margin: 0px 0px 5px;
+	color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #8CABDD;
+	padding: 0px 0px 10px;
+}
+
+div.license {
+	font-size: x-small;
+	text-align: right;
+}
+
+
+
+/* Footer
+------------------------------------------------------------ */
+
+div#footer p {
+	margin-bottom: 3px;
+	margin-left:30px;
+	margin-right:30px;
+}
+
+div#footer address {
+	font-style: normal;
+	padding-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+
+/* for MacIE
+------------------------------------------------------------ */
+
+textarea,input,select {
+	font-family: "ＭＳ Ｐゴシック", "Osaka", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku GothicPro", sans-serif;
+}
+
+/* for AppleScript Syntax */
+.ash_button {
+	padding: 3px 5px 3px 5px;
+}
+
+div.entry_body .applescript li {
+	margin-left: 0;
+}

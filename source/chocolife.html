@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="author" content="<%author_name>" />
+<meta name="description" content="<%introduction>" />
+<title>&lt;?chocolife&gt;<!--not_index_area--> <%sub_title><!--/not_index_area--></title>
+<link rel="stylesheet" type="text/css" href="<%css_link>" media="all" />
+<link rel="alternate" type="application/rss+xml" href="<%url>?xml" title="RSS" />
+<link rel="top" href="<%url>" title="トップ" />
+<link rel="index" href="<%url>?all" title="index" />
+<!--prevpage--><link rel="prev" href="<%prevpage_url>" title="<%template_prevpage>" /><!--/prevpage-->
+<!--nextpage--><link rel="next" href="<%nextpage_url>" title="<%template_nextpage>" /><!--/nextpage-->
+<!--preventry--><link rel="next" href="<%preventry_url>" title="<%preventry_title>" /><!--/preventry-->
+<!--nextentry--><link rel="prev" href="<%nextentry_url>" title="<%nextentry_title>" /><!--/nextentry-->
+
+<link type="text/css" rel="stylesheet" href="https://dl.dropboxusercontent.com/u/271700/applescript_syntaxhighlight.css"></link>
+<link type="text/css" rel="stylesheet" href="https://dl.dropbox.com/u/271700/SyntaxHighlighter.css"></link>
+<link href="https://dl.dropboxusercontent.com/u/271700/lightbox/css/lightbox.css" rel="stylesheet" />
+
+<script type="text/javascript" src="http://blog-imgs-26.fc2.com/c/h/o/chocolife/ZeroClipboard.js" charset="euc-jp"></script>
+<script type="text/javascript" charset="utf-8" src="http://blog-imgs-26.fc2.com/c/h/o/chocolife/applescript_syntaxhighlight_023.js"></script>
+<script type="text/javascript" src="http://blog-imgs-26.fc2.com/c/h/o/chocolife/shCore_mod.js" charset="euc-jp"></script>
+<script type="text/javascript" src="http://blog-imgs-27.fc2.com/c/h/o/chocolife/shBrushCss.js" charset="euc-jp"></script>
+<script type="text/javascript" src="http://blog-imgs-27.fc2.com/c/h/o/chocolife/shBrushJScript.js" charset="euc-jp"></script>
+<script type="text/javascript" src="http://blog-imgs-27.fc2.com/c/h/o/chocolife/shBrushPython.js" charset="euc-jp"></script>
+<script type="text/javascript" src="http://blog-imgs-26.fc2.com/c/h/o/chocolife/shBrushActionScript.js" charset="euc-jp"></script>
+
+<script language="javascript" charset="euc-jp">
+window.onload = function () {
+  ash.highlight();
+  //ZeroClipboard.setMoviePath( 'http://blog-imgs-26.fc2.com/c/h/o/chocolife/ZeroClipboard.swf );
+  dp.SyntaxHighlighter.ClipboardSwf = '<%url>file/clipboard.swf';
+  dp.SyntaxHighlighter.HighlightAll('code');
+  ash.glueZeroClipboardClient();
+
+  var pagetop = $('.pagetop');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1500) {
+      pagetop.fadeIn();
+    } else {
+      pagetop.fadeOut();
+    }
+  });
+  pagetop.click(function() {
+    $("html,body").animate({scrollTop: 0}, 1000);
+    return false;
+  });
+}
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/271700/lightbox/js/lightbox.js"></script>
+
+</head>
+<body>
+<!-- [FC2 Analyzer] http://analyzer.fc2.com/  -->
+<script language="javascript" src="http://analyzer51.fc2.com:8080/ana/processor.php?uid=140280" type="text/javascript" charset="euc-jp"></script>
+<noscript><div align="right"><img src="http://analyzer51.fc2.com:8080/ana/icon.php?uid=140280&ref=&href=&wid=0&hei=0&&col=0" /><strong><a href="http://k.fc2.com/">携帯ホームページ</a></strong></div></noscript>
+<!-- [FC2 Analyzer]  -->
+
+
+<div id="header">
+	<h1><a href="<%url>" accesskey="0" title="&lt;?chocolife&gt;">&lt;?chocolife&gt;</a></h1>
+	<p><%introduction></p>
+</div><!-- /header -->
+
+<div id="container">
+
+
+<div id="primary">
+<div id="main">
+
+    <!--not_titlelist_area-->
+    <!--not_search_area-->
+	<!--topentry-->
+	<div class="content">
+		<h2 id="e<%topentry_no>" class="entry_header"><!--not_permanent_area--><a href="<%topentry_link>" title=""><!--/not_permanent_area--><%topentry_title><!--not_permanent_area--></a><!--/not_permanent_area--></h2>
+		<div class="tags" style="padding-left: 15px;">Tags : <!--tag_list-->
+		<a href="<%url>?tag=<%topentry_tag_list_name>">[<%topentry_tag_list_name>]</a>
+		<!--/tag_list--></div>
+		<div class="entry_body">
+			<%topentry_body>
+			<!--more_link-->
+			<p class="entry_more"><a href="<%topentry_link>#more" title="<%topentry_title>"><%template_extend></a></p>
+			<!--/more_link-->
+			<!--more--><div id="more"><%topentry_more></div><!--/more-->
+			<!--community-->
+			<p class="theme">
+			<%template_theme> : <a href="<%topentry_thread_link>" title="<%topentry_thread_title>"><%topentry_thread_title></a><br />
+			<%template_genre> : <a href="<%topentry_community_janrelink>" title="<%topentry_community_janrename>"><%topentry_community_janrename></a>
+			</p>
+			<!--/community-->
+			<!--topentry_tag-->
+			<!--<p class="tag_lnk">tag : <%topentry_jointtag></p>-->
+    		<!--/topentry_tag--> 
+		</div>
+		<ul class="entry_footer">
+			<li><%topentry_year>-<%topentry_month>-<%topentry_day> | </li>
+			<li><a href="<%topentry_category_link>" title="<%template_view_category>"><%topentry_category></a> | </li>
+			<!--allow_comment-->
+			<li><a href="<%topentry_link>#cm" title="">Comment : <%topentry_comment_num></a> | </li>
+			<!--/allow_comment-->
+			<!--deny_comment--><!--/deny_comment-->
+			<!--allow_tb-->
+			<li><a href="<%topentry_link>#tb" title="">TB : <%topentry_tb_num></a></li>
+			<!--/allow_tb-->
+			<!--deny_tb--><!--/deny_tb-->
+		</ul>
+		<!--
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+		         xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<rdf:Description
+		    rdf:about="<%topentry_link>"
+		    trackback:ping="<%url>tb.php/<%topentry_tb_no>"
+		    dc:title="<%topentry_title>"
+		    dc:identifier="<%topentry_link>"
+		    dc:subject="<%topentry_category>"
+		    dc:description="<%topentry_discription>"
+		    dc:creator="<%author_name>"
+		    dc:date="<%topentry_year>-<%topentry_month>-<%topentry_day>T<%topentry_hour>:<%topentry_minute>:<%topentry_second>+09:00" />
+		</rdf:RDF>
+		-->
+		<div class="pagetop"><a href="#container" title="<%template_go_top>">▲</a></div>
+	</div><!--/content-->
+	<!--/topentry-->
+    <!--/not_titlelist_area-->
+    <!--/not_search_area-->
+
+
+	<!--trackback_area-->
+	<div id="tb" class="content">
+		<p class="sub_header">トラックバック</p>
+		<p class="trackback_url">
+			<input onfocus="this.select()" value="<%trackback_url>" readonly="readOnly" /><br />
+			<a href="javascript:window.location.replace('http://blog.fc2.com/?url='+window.location.href);"><%template_trackback_this></a>
+		</p>
+		<!--trackback-->
+		<h3 id="trackback<%tb_no>" class="sub_title"><a href="<%tb_url>" title="<%tb_title>"><%tb_title></a></h3>
+		<div class="sub_body"><%tb_excerpt></div>
+		<ul class="sub_footer">
+			<li><%tb_year>-<%tb_month>-<%tb_day> <%tb_hour>:<%tb_minute>  :</li>
+			<li><%tb_blog_name></li>
+		</ul>
+		<!--/trackback-->
+	    <div class="pagetop"><a href="#" title="<%template_go_top>">▲</a></div>
+	</div><!--/content-->
+	<!--/trackback_area-->
+
+
+	<!--comment_area-->	
+	<div id="cm" class="content">
+		<p class="sub_header"><%template_comment></p>
+		<div class="form">
+		<form action="./" method="post" name="comment_form" id="comment_form">
+			<dl>
+				<dt>
+					<input type="hidden" name="mode" value="regist" />
+					<input type="hidden" name="comment[no]" value="<%pno>" />
+					<label for="name"><%template_name></label>
+				</dt>
+				<dd><input id="name" type="text" name="comment[name]" size="30" value="<%cookie_name>" /></dd>
+				<dt><label for="name"><%template_title></label></dt>
+				<dd><input id="subject" name="comment[title]" type="text" size="30" value="No title" onblur="if(this.value == '') this.value='No title';" onfocus="if(this.value == 'No title') this.value='';" /></dd>
+				<dt><label for="mail"><%template_address></label></dt>
+				<dd><input id="mail" type="text" name="comment[mail]" size="30" value="<%cookie_mail>" /></dd>
+				<dt><label for="url">URL</label></dt>
+				<dd><input id="url" type="text" name="comment[url]" size="30" value="<%cookie_url>" /></dd>
+				<dt><label>Font &amp; Icon</label></dt>
+				<dd><script type="text/javascript" src="<%template_comment_js>"></script></dd>
+				<dt><label for="comment"><%template_body></label></dt>
+				<dd><textarea id="comment" cols="50" rows="5" name="comment[body]"></textarea></dd>
+				<dt><label for="pass"><%template_password></label></dt>
+				<dd><input id="pass" type="password" name="comment[pass]" size="20" /></dd>
+				<dt><%template_private></dt>
+				<dd><input id="himitu" type="checkbox" name="comment[himitu]" /><label for="himitu"><%template_private_check></label></dd>
+			</dl>
+			<p class="form_btn"><input type="submit" value="<%template_send>" /></p>
+		</form>
+		</div><!--/form-->
+		<!--comment-->
+		<h3 id="comment<%comment_no>" class="sub_title"><%comment_title></h3>
+		<div class="sub_body"><%comment_body></div>
+		<ul class="sub_footer">
+			<li><%comment_year>-<%comment_month>-<%comment_day> <%comment_hour>:<%comment_minute> : </li>
+			<li><%comment_mail+name> <%comment_url+str> : </li>
+			<li><a href="<%comment_edit_link>" title="<%template_edit_comment>"><%template_edit></a></li>
+		</ul>
+		<!--/comment-->
+		<div class="pagetop"><a href="#" title="<%template_go_top>">▲</a></div>
+	</div><!--/content-->
+	<!--/comment_area-->
+
+
+	<!--edit_area-->
+	<div class="content">
+		<p class="sub_header"><%template_edit_comment></p>
+		<div class="form">
+		<form action="./" method="post" name="comment_form" id="comment_form">
+			<dl>
+				<dt>
+					<input type="hidden" name="mode" value="edit" />
+					<input type="hidden" name="mode2" value="edited" />
+					<input type="hidden" name="edit[rno]" value="<%eno>" />
+					<label for="name"><%template_name></label>
+				</dt>
+				<dd><input id="edit[name]" type="text" name="edit[name]" size="30" value="<%edit_name>" /></dd>
+				<dt><label for="name"><%template_title></label></dt>
+				<dd><input id="subject" type="text" name="edit[title]" size="30" value="<%edit_title>" /></dd>
+				<dt><label for="mail"><%template_address></label></dt>
+				<dd><input id="mail" type="text" name="edit[mail]" size="30" value="<%edit_mail>" /></dd>
+				<dt><label for="url">URL</label></dt>
+				<dd><input id="url" type="text" name="edit[url]" size="30" value="<%edit_url>" /></dd>
+				<dt><label>Font &amp; Icon</label></dt>
+				<dd><script type="text/javascript" src="<%template_comment_js>"></script></dd>
+				<dt><label for="comment"><%template_body></label></dt>
+				<dd><textarea id="comment" cols="50" rows="5" name="edit[body]"><%edit_body></textarea></dd>
+				<dt><label for="pass"><%template_password></label></dt>
+				<dd><input id="pass" type="password" name="edit[pass]" size="20" /></dd>
+				<dt><%template_private></dt>
+				<dd><input id="himitu" type="checkbox" name="edit[himitu]" /><label for="himitu"><%template_private_check></label></dd>
+			</dl>
+			<p class="form_btn"><input type="submit" value="<%template_send>" /><input type="submit" name="edit[delete]" value="<%template_delete>" /></p>
+		</form>
+		</div><!--/form-->
+	</div><!--/content-->
+	<!--/edit_area-->
+
+
+    <!--titlelist_area-->
+	<div class="content">
+		<p class="sub_header">title list</p>
+		<ul class="list_body">
+			<!--titlelist-->
+			<li><%titlelist_year>/<%titlelist_month>/<%titlelist_day> : <a href="<%titlelist_category_url>" title="<%template_view_category>"><%titlelist_category></a> : <a href="<%titlelist_url>" title="<%titlelist_body>"><%titlelist_title></a></li>
+			<!--/titlelist-->
+		</ul>
+		<div class="pagetop"><a href="#" title="<%template_go_top>">▲</a></div>
+	</div><!--/content-->
+	<!--/titlelist_area-->
+
+
+	<!--search_area-->
+	<div class="content">
+		<p class="sub_header">search : <%sub_title></p>
+		<ul class="list_body">
+			<!--topentry--><li><%topentry_year>/<%topentry_month>/<%topentry_day> : <a href="<%topentry_category_link>" title="<%template_view_category>"><%topentry_category></a> : <a href="<%topentry_link>" title="<%topentry_discription>"><%topentry_title></a></li><!--/topentry-->
+		</ul>
+		<div class="pagetop"><a href="#" title="<%template_go_top>">▲</a></div>
+	</div><!--/content-->
+    <!--/search_area-->
+
+
+
+	<div class="page_navi">
+	<!--not_permanent_area-->
+		<!--prevpage--><div class="navi_left"><a href="<%prevpage_url>" title="<%template_prevpage>">&lt;&lt;&nbsp;Newer Entries</a>&nbsp;</div><!--/prevpage-->
+		<!--&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%url>" title="<%template_home>">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
+		<!--nextpage--><div class="navi_right">&nbsp;<a href="<%nextpage_url>" title="<%template_nextpage>">Older Entries&nbsp;&gt;&gt;</a></div><!--/nextpage-->
+	<!--/not_permanent_area-->
+	<!--permanent_area-->
+		<!--preventry--><div class="navi_left"><a href="<%preventry_url>" title="<%preventry_title>">&lt;&lt;&nbsp;Newer Entry</a>&nbsp;</div><!--/preventry-->
+		<!--&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%url>" title="<%template_home>">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
+		<!--nextentry--><div class="navi_right">&nbsp;<a href="<%nextentry_url>" title="<%nextentry_title>">Older Entry&nbsp;&gt;&gt;</a></div><!--/nextentry-->
+	<!--/permanent_area-->
+	</div><!--/page_navi-->
+
+
+
+</div><!-- /main -->
+</div><!--/primary-->
+
+
+<div id="sidemenu">
+	<!--plugin-->
+	<!--plugin_first-->
+	<dl class="sidemenu_body">
+		<dt class="plg_title" style="text-align:<%plugin_first_talign>"><%plugin_first_title></dt>
+		<!--plugin_first_description--><dd class="plg_header" style="text-align:<%plugin_first_ialign>"><%plugin_first_description></dd><!--/plugin_first_description-->
+		<dd class="plg_body" style="text-align:<%plugin_first_align>"><%plugin_first_content></dd>
+		<!--plugin_first_description2--><dd class="plg_footer" style="text-align:<%plugin_first_ialign>"><%plugin_first_description2></dd><!--/plugin_first_description2-->
+	</dl>
+	<!--/plugin_first--> 
+	<!--/plugin-->
+
+
+	<!--plugin-->
+	<!--plugin_second-->
+	<dl class="sidemenu_body">
+		<dt class="plg_title" style="text-align:<%plugin_second_talign>"><%plugin_second_title></dt>
+		<!--plugin_second_description--><dd class="plg_header" style="text-align:<%plugin_second_ialign>"><%plugin_second_description></dd><!--/plugin_second_description-->
+		<dd class="plg_body" style="text-align:<%plugin_second_align>"><%plugin_second_content></dd>
+		<!--plugin_second_description2--><dd class="plg_footer" style="text-align:<%plugin_second_ialign>"><%plugin_second_description2></dd><!--/plugin_second_description2-->
+	</dl>
+	<!--/plugin_second-->
+	<!--/plugin-->
+</div><!-- /sidemenu -->
+
+
+</div><!-- /container -->
+
+<div id="footer">
+	
+	<p>Powered by <a href="http://blog.fc2.com/" title="FC2 BLOG">FC2 Blog</a></p>
+	<!--ad--><p><%ad> <%ad2></p>
+	<address>Copyright &copy; <%template_copyright_date> <%blog_name> All Rights Reserved.</address>
+</div><!-- /footer -->
+
+
+<!-- Last update 2008-03-10 Template by FC2-->
+</body>
+</html>
